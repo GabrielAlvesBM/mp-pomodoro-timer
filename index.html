@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="assets/js/utils.js" defer></script>
+    <script src="assets/js/tasks.js" defer></script>
+    <script src="assets/js/counter.js" defer></script>
+  </head>
+  <body>
+    <div class="image-effect">
+      <section class="container">
+        <section class="container-timer">
+          <div>
+            <button class="modality active-button" type="button">Pomodoro</button>
+            <button class="modality" type="button">Intervalo Curto</button>
+            <button class="modality" type="button">Intervalo Longo</button>
+          </div>
+          <div>
+            <p id="counter">25:00</p>
+          </div>
+          <div>
+            <button id="start" class="start" type="button">Começar</button>
+            <div class="pomodoro-times">
+              <span>Pomodoros Feitos: </span><span id="pomodoro-times__number">0</span>
+            </div>
+          </div>
+        </section>
+
+        <div class="divider"></div>
+        
+        <section class="tasks">
+          <div>
+            <h1>Tarefas</h1>
+            <form>
+              <input
+                id="new-task"
+                name="newTask"
+                placeholder="Adicione uma nova tarefa"
+                type="text"
+              />
+              <button id="add-task" type="button">+</button>
+            </form>
+          </div>
+          <div class="tasks-list">
+            <ol id="tasks"></ol>
+          </div>
+        </section>
+      </section>
+    </div>
+
+    <audio id="alarm" src="./assets/sounds/clock-alarm-8761.mp3"></audio>
+    <audio id="clickSound" src="./assets/sounds/clickAudio.ogg"></audio>
+  </body>
+</html>
