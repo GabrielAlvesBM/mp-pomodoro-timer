@@ -107,6 +107,6 @@ function startCounter(time) {
         counter.textContent = minutes + ":" + seconds;
         actualTime = newTime;
         remainingTime = newTime;
-        }, 0);
+        }, 1000);
     return;
 }
